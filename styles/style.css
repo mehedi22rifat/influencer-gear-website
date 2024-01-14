@@ -71,7 +71,7 @@
 
 /* banner related style */
 .banner-container{
-    background-image: url("/images/circle.svg");
+    background-image: url("../images/circle.svg");
     background-repeat: no-repeat;
     background-position:bottom right;
     display: flex;
