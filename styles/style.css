@@ -73,12 +73,15 @@
 .banner-container{
     background-image: url("/images/circle.svg");
     background-repeat: no-repeat;
-    background-position: right;
+    background-position:bottom right;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin:100px 0px;
-    /* width: 100%; */
+     /* margin:100px 0px;  */
+     margin-top: 100px;
+     margin-left: auto;
+     margin-right: auto;
+    
 }
 .banner-details{
     width: 50%;
@@ -107,8 +110,85 @@ margin-left: 200px;
 }
 
 
+/* compary related style here */
+ .company{
+    width: 80%;
+    margin:100px auto;
+    display: flex;
+    justify-content: space-between;
+    
+ }
 
 
+
+
+ /* product related style */
+
+ .product-title{
+    color: #3A3A3A;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    text-align: center;
+    margin: 30px auto;
+ }
+
+ .product{
+    width: 85%;
+    margin: 80px auto;
+ }
+ .product-container{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap: 20px;
+    
+ }
+ .product-content{
+    border-radius: 10px;
+    background: #ffffff;
+    padding: 10px;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+
+ }
+  .product-content img{
+     width: 100%;
+  }
+ .img-star-container{
+    display: flex;
+   gap: 10px;
+ }
+ .img-star img{
+    width: 20px;
+ }
+
+ /* featured-section style */
+   .featured-section{
+    width: 90%;
+    margin: 50px auto;
+    display:flex;
+    gap: 70px;
+   }
+
+   .featured-title{
+    color: #0A0826;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+   }
+
+   .featured-descraption{
+     color: #6C6C6C;
+     font-size: 16px;
+     font-style: normal;
+     font-weight: 700;
+     line-height: 28px;
+
+   }
+
+
+
+/* responsive for mobile */
 @media screen and (max-width:576px){
     .navbar{
         flex-direction: column;
@@ -128,8 +208,9 @@ margin-left: 200px;
 }
 
  .banner-details{
-    width: 90%;
+    width: 100%;
     margin: 50px auto;
+    padding: 0px 10px;
 }
 
 .banner-container .banner-img{
@@ -141,10 +222,31 @@ margin-left: 200px;
    text-align: center;
     } 
 
-   
+/* compary section responsive */
+.company{
+    display: grid;
+     margin: 0px auto;
+    grid-template-columns:repeat(4,1fr);
+    grid-template-columns: repeat(3,1fr);
+     gap:20px; 
+}
+
+/* product responsive */
+.product-container{
+    display:grid;
+    grid-template-columns:1fr;
+    gap: 20px;
+}
+/* features relates style */
+.featured-section{
+  flex-direction: column-reverse;
+   }
+ 
 }
 
 
+
+/* responsive for tablet */
 @media screen and (min-width:576px) and (max-width:992px){
    
     .navbar{
@@ -165,8 +267,9 @@ margin-left: 200px;
 }
 
  .banner-details{
-    width: 90%;
+    width: 100%;
     margin: 100px auto;
+    padding: 0px 10px;
 }
 
 .banner-container .banner-img{
@@ -178,6 +281,28 @@ margin-left: 200px;
    text-align: center;
     } 
 
+/* compary section responsive */
+.company{
+    display: grid;
+     margin: 0px auto;
+    grid-template-columns:repeat(4,1fr);
+    grid-template-columns: repeat(3,1fr);
+     gap: 50px; 
+}
+
+/* product responsive */
+.product-container{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap: 20px;
+}
+
+.featured-section{
+    flex-direction: column-reverse;
+     }
+     .featured-img img{
+         width: 100%;
+     }
 
 }
 
