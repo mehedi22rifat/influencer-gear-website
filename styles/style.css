@@ -186,6 +186,46 @@ margin-left: 200px;
 
    }
 
+   /* footer related style */
+
+   .footer{
+    text-align: center;
+    /* margin:100px auto; */
+    background: #0A0826;
+    padding:50px;
+   }
+
+   
+ 
+   .footer-title{
+    margin-top: 100px;
+    color: #FFF;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+   }
+   .footer-descraption{
+    margin-top: 10px;
+    color: var(--Text-Gray-300, #D9DBE1);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 171.429% */
+   }
+     .footer-img img{
+        width: 50px;
+        border-radius: 50%;
+        margin-right: 30px;
+        margin-bottom: 100px;
+       margin-top: 10px;
+        
+     }
+
+
+
+
+
 
 
 /* responsive for mobile */
@@ -229,6 +269,7 @@ margin-left: 200px;
     grid-template-columns:repeat(4,1fr);
     grid-template-columns: repeat(3,1fr);
      gap:20px; 
+      padding-right: 20px;
 }
 
 /* product responsive */
@@ -240,6 +281,9 @@ margin-left: 200px;
 /* features relates style */
 .featured-section{
   flex-direction: column-reverse;
+   }
+   .featured-img img{
+   width: 100%;
    }
  
 }
